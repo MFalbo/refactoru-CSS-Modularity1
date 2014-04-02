@@ -49,7 +49,7 @@
 
 }
 
-.bar-graph td div{
+.bar{
 	background-color: #5B9DDA;
 	color: white;
 	border-radius: 0 3px 3px 0;
@@ -58,14 +58,21 @@
 }
 
 .lightbox-background{
-	background-color: #616161;
-	padding: 14%;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(127, 140, 141,0.8);
 }
 
 .lightbox-foreground{
-	background-color: white;
+	position: absolute;
+	margin: 20%;
+	background-color: #FFF;
 	border-radius: 10px;
-	padding: 8%;
+	padding: 4%;
 }
 
 .lightbox-message{
@@ -79,4 +86,18 @@
 	border-radius: 5px;
 	float: right;
 	padding: 5px 20px;
+}
+
+.comment{
+	display: inline-block;
+	width: 92%
+}
+
+.sub-comment{
+	overflow: hidden;
+}
+
+.avatar{
+	float:left;
+	margin-right: 10px;
 }
