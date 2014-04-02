@@ -1,0 +1,16 @@
+/* ADD YOUR STYLES HERE */
+.bottom-border{
+	border-bottom: 1px solid #CCC;
+}
+
+.top-border{
+	border-top: 1px solid #CCC;
+}
+
+.wide-table{
+	width: 600px;
+}
+
+.wide-row{
+	padding: 10px 0;
+}
