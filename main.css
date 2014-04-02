@@ -1,27 +1,32 @@
 /* ADD YOUR STYLES HERE */
-.bottom-border{
-	border-bottom: 1px solid #CCC;
-}
 
-.top-border{
-	border-top: 1px solid #CCC;
-}
-
+/*Data Table*/
 .wide-table{
 	width: 800px;
 }
 
-.wide-row{
+.wide-table tr, .wide-table th{
+	border-bottom: 1px solid #CCC;
+}
+
+.wide-table tr:last-child{
+	border-bottom: none;
+}
+
+.wide-table td, .wide-table th{
 	padding: 10px 0;
 	padding-right: 20px;
 }
 
+/*Stats*/
 .centered-table{
 	text-align: center;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
 }
 
-.left-col{
-	padding-left: 15px;
+.centered-table td{
+	padding: 15px;
 }
 
 .bold-data{
@@ -34,6 +39,7 @@
 	color: #CCC;
 }
 
+/*Bar Chart*/
 .bar-graph{
 	text-align: right;
 }
@@ -57,27 +63,33 @@
 	height: 25px;
 }
 
+/*Lightbox*/
 .lightbox-background{
-	display: none;
+	display: table;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(127, 140, 141,0.8);
+	display: none;
+}
+
+.wrapper{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .lightbox-foreground{
-	position: absolute;
-	margin: 20%;
+	margin: 0 auto;
 	background-color: #FFF;
 	border-radius: 10px;
 	padding: 4%;
+	width: 60%;
 }
 
 .lightbox-message{
 	position: relative;
-
 }
 
 .lightbox-button{
@@ -88,6 +100,7 @@
 	padding: 5px 20px;
 }
 
+/*Media Block*/
 .comment{
 	display: inline-block;
 	width: 92%
